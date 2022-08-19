@@ -134,19 +134,25 @@ for (const propiedad in personal){
 /* localStorage.setItem('Nombre', prompt('Ingrese su nombre'))
 let valor = localStorage.getItem('Nombre')
 console.log(valor) */
+function newToDoItem(text){
 
-/* let addButton = document.getElementById('add-button')
+    let toDoItem = document.createElement('li')
+    toDoItem.innerText = text
 
-addButton.addEventListener("click", addToDoItem)
+    toDoList.append(toDoItem)
+} 
 
 function addToDoItem(){
     let itemText = toDoEntryBox.value
     newToDoItem(itemText)
-}
+    
+    }
 
-let toDoEntryBox = document.getElementById('todo-entry-box')
 
-let toDoList = document.getElementById('todo-list')
+ let addButton = document.getElementById('add-button')
+
+addButton.addEventListener("click", addToDoItem)
+
 
 function newToDoItem(text){
 
@@ -154,7 +160,25 @@ function newToDoItem(text){
     toDoItem.innerText = text
 
     toDoList.append(toDoItem)
-} */
+} 
+let toDoEntryBox = document.getElementById('todo-entry-box')
+
+let toDoList = document.getElementById('todo-list')
+
+
+const alerta  = () => {
+    Swal.fire({
+        title: 'Warning',
+        text: 'Do you want to continue?',
+        icon: 'warning',
+        confirmButtonText: 'Ok'
+      })
+}
+
+let botonBorrar = document.getElementById('eventButton')
+    botonBorrar.addEventListener('click', alerta)
+
+
 
 /* const nombres1 = ['Juan', 'Julieta']
 const nombres2 = ['Carlos', 'Mariela']
