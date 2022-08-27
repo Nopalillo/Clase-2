@@ -83,7 +83,7 @@ else{
 }
  }
 
-for(const articulo of productos) {
+/* for(const articulo of productos) {
 
  let showProducts = document.createElement('div')
  showProducts.innerHTML = `<div><strong>Nombre de producto: ${articulo.nombre}</strong></div>
@@ -91,3 +91,7 @@ for(const articulo of productos) {
                            <p>Unidades restantes: ${articulo.stock}</p>`
                            document.body.append(showProducts)
 }
+ */
+
+
+

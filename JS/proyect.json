@@ -1,0 +1,21 @@
+[
+    
+    {
+      "nombre": "Window",
+      "precio": 500,
+      "stock": 5
+    },
+
+    {
+        "nombre": "Bench",
+        "precio": 700,
+        "stock": 24
+      },
+
+      {
+        "nombre": "Chair",
+        "precio": 200,
+        "stock": 10
+      }
+
+]
